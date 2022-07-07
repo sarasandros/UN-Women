@@ -21,11 +21,10 @@ body{
     font-feature-settings: "palt";
     letter-spacing: 0.05em;
 }
-#wrapper{
-	width: 100%;
-	margin: 0 auto;
+.space{
 	padding: 5%;
 }
+
 #top_main{
 	position: relative;
 }
@@ -80,10 +79,86 @@ body{
 #second_part h2{
 	text-align: center;
 }
-.bg-white{
-	--tw-bg-opacity: 1;
-    background-color: rgba(252,244,237,var(--tw-bg-opacity);
+.box {
+    position: relative;
+    padding: 1rem;
+    border-radius: 10px;
+    /* border: 1px solid #E83819; */
+    background-color: #CAE8F5;
+    color: #333;
+    font-weight: bold;
+    font-size: 18px;
 }
-.rounded-lg{
-	border-radius: 1.5rem;
+
+.box:before {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    border: 3px solid #E83819;
+    content: "";
+}
+
+.box:after {
+    position: absolute;
+    bottom: -31px;
+    left: 50px;
+    transform: skew(-25deg);
+    height: 25px;
+    width: 15px;
+    /* border-right: 3px solid #E83819;
+    background-color: #fff; */
+    content: "";
+}
+.pic-container span{
+	color: #009CDB;
+}
+#kifu{
+	padding-top: 10%;
+}
+#kifu h3{
+	padding-top: 5%;
+	font-size: 125%;
+}
+#kifu h4{
+	color: #E83819;
+}
+#kifu h4:nth-of-type(2){
+	padding-top: 3%;
+}
+#kifu ul li{
+	background-color: #009CDB;
+	padding: 6px;
+	text-align: center;
+	border-radius: 30px;
+	margin-bottom: 5%;
+}
+#kifu ul li a{
+	display: block;
+	color: #fff;
+	text-decoration: none;
+}
+.share_part{
+	text-align: center;
+}
+.share_part ul{
+	display: flex;
+	justify-content: center;
+}
+.share_part ul li{
+	margin: 0 3%;
+	padding: 6px;
+}
+.share_part ul li.lp_fb{
+	background-color: #3E5C99;
+}
+.share_part ul li.lp_twitter{
+	background-color: #2BA2EF;
+}
+.share_part ul li a{
+	display: block;
+	color: #fff;
+	text-decoration: none;
 }
