@@ -1,0 +1,89 @@
+@charset "UTF-8";
+/* CSS Document */
+.cf:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+img{
+	vertical-align: bottom;
+	max-width: 100%;
+	height: auto;
+}
+body{
+	font-size: 17.6px;;
+	color: #000;
+    overflow-wrap: break-word;
+    word-break: normal;
+	font-family: -apple-system,BlinkMacSystemFont,"Helvetica Neue",'Noto Sans JP',"Hiragino Kaku Gothic ProN",YuGothic,"Yu Gothic",Verdana,Meiryo,sans-serif;
+	background: #fff;
+	line-height: 1.8;
+    font-feature-settings: "palt";
+    letter-spacing: 0.05em;
+}
+#wrapper{
+	width: 100%;
+	margin: 0 auto;
+	padding: 5%;
+}
+#top_main{
+	position: relative;
+}
+#sdgs_logo{
+	position: absolute;
+	top: 3%;
+	left: 3%;
+	width: 10%;
+}
+#top_logo{
+	position: absolute;
+	top: 3%;
+	right: 3%;
+	width: 30%;
+}
+#intro{
+	text-align: center;
+	margin: 0 auto;
+}
+#intro p{
+	padding-top: 10%;
+}
+#intro span{
+	background: linear-gradient(transparent 70%, #F3F30D 0%)
+}
+#and_you{
+	padding-top: 10%;
+	width: 50%;
+	margin: 0 auto;
+}
+.tomoni{
+	color: #009CDB;
+	font-size: 150%;
+	padding-top: 10%;
+}
+.un_women{
+	padding-top: 10%;
+	width: 50%;
+    margin: 0 auto;
+}
+.red_circle:after{
+	content: "";
+	display: inline-block;
+	height: 10px;
+	width: 10px;
+	background-color: #E83819;
+	border-radius: 5px;
+}
+#second_part{
+	padding-top: 20%;
+}
+#second_part h2{
+	text-align: center;
+}
+.bg-white{
+	--tw-bg-opacity: 1;
+    background-color: rgba(252,244,237,var(--tw-bg-opacity);
+}
+.rounded-lg{
+	border-radius: 1.5rem;
+}
