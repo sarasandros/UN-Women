@@ -58,7 +58,7 @@ body{
 .tomoni{
 	color: #009CDB;
 	font-size: 150%;
-	padding-top: 10%;
+	padding: 10% 0;
 }
 .un_women{
 	padding-top: 10%;
@@ -173,7 +173,10 @@ input[type="submit" i]{
 	color: #fff;
 	text-decoration: none;
 }
-.share_part{
+#kifu #present_part li{
+	background-color: #CAE8F5;
+}
+.share_part {
 	text-align: center;
 }
 .tell{
@@ -195,6 +198,14 @@ input[type="submit" i]{
 .share_part ul li.lp_twitter{
 	background-color: #2BA2EF;
 }
+.lp_fb img{
+	display: inline-block;
+	width: 20%;
+}
+.lp_twitter img{
+	display: inline-block;
+	width: 20%;
+}
 .share_part ul li a{
 	display: block;
 	color: #fff;
@@ -204,6 +215,13 @@ input[type="submit" i]{
 	text-align: center;
 	border: 1px solid #000;
 	margin: 5%;
+	position: relative;
+}
+.sticky_note div{
+	position: absolute;
+	top: -3%;
+	left: 50%;
+	transform: translateX(-50%);
 }
 .sticky_note h3{
 	color: #E83819;
