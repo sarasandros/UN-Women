@@ -72,13 +72,13 @@ body{
 	width: 10px;
 	background-color: #E83819;
 	border-radius: 5px;
-}
-#second_part{
-	padding-top: 20%;
+	margin: 0 5px;
 }
 #second_part h2{
 	text-align: center;
 	margin-bottom: 10%;
+	font-weight: bold;
+    font-size: 120%;
 }
 .box {
     position: relative;
@@ -120,19 +120,18 @@ body{
 	transform: translateX(-50%);
 	width: 90%;
 }
-.box ul.title_1{
-	padding-top: 20%;
-}
 .box h3.title_2{
 	position: absolute;
 	top: -3%;
 	left: 50%;
 	transform: translateX(-50%);
 	width: 90%;
-
 }
-.box p{
-	padding-top: 18%;
+.flex_fix{
+	padding-top: 10%;
+}
+form div{
+	margin-top: 10%;
 }
 input[type="email" i]{
 	width: 90%;
@@ -176,6 +175,10 @@ input[type="submit" i]{
 #kifu #present_part li{
 	background-color: #CAE8F5;
 }
+#kifu #present_part li:first-child{
+	padding: 10% 0 5% 0;
+	margin-bottom: 0%;
+}
 .share_part {
 	text-align: center;
 }
@@ -189,22 +192,25 @@ input[type="submit" i]{
 	justify-content: center;
 }
 .share_part ul li{
-	margin: 0 3%;
 	padding: 6px;
 }
 .share_part ul li.lp_fb{
 	background-color: #3E5C99;
+	margin: 3% 0% 3% 5%;
 }
 .share_part ul li.lp_twitter{
 	background-color: #2BA2EF;
+	margin: 3% 5% 3% 3%;
 }
 .lp_fb img{
 	display: inline-block;
 	width: 20%;
+	padding-right: 5px;
 }
 .lp_twitter img{
 	display: inline-block;
 	width: 20%;
+	padding-right: 5px;
 }
 .share_part ul li a{
 	display: block;
@@ -219,10 +225,11 @@ input[type="submit" i]{
 }
 .sticky_note div{
 	position: absolute;
-	top: -3%;
+	top: -20%;
 	left: 50%;
 	transform: translateX(-50%);
 }
+
 .sticky_note h3{
 	color: #E83819;
 	font-size: 150%;
@@ -310,7 +317,6 @@ h2.blue_frame_flex{
 }
 .join_part p{
 	color: #E83819;
-	padding-top: 10%;
 	padding-bottom: 3%;
 }
 .sticky_note h4{
@@ -325,6 +331,8 @@ h2.blue_frame_flex{
 }
 .blue_bk{
 	background: #0F97D2;
+	padding: 10%;
+	margin-bottom: 5%;
 }
 .blue_bk p{
 	color: #fff;
