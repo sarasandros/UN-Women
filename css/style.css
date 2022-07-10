@@ -370,6 +370,7 @@ h2.blue_frame_flex{
 }
 .blue_bk p{
 	color: #fff;
+	text-align: center;
 }
 .tomoni_w{
 	color: #fff;
@@ -452,4 +453,19 @@ h2.blue_frame_flex{
 	#sdgs_mention ul li:last-child{
 		width: 70%;
 	}
+}
+
+
+/* PC */
+@media screen and (min-width : 1025px){
+ .space{
+	width: 980px;
+	margin: 0 auto;
+ }
+ .share_part ul{
+	width: 50%;
+ }
+ .tell{
+	padding-bottom: 1%;
+ }
 }
