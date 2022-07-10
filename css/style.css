@@ -391,3 +391,65 @@ h2.blue_frame_flex{
 .bg_space{
 	padding-bottom: 15%;
 }
+
+/* Tablet */
+@media screen and (min-width : 600px){
+	#intro p{
+		padding-top: 5%;
+	}
+	.tomoni {
+		padding: 5% 0;
+	}
+	#second_part h2{
+		margin-bottom: 0%;
+	}
+	.box h3{
+		width: auto;
+	}
+	.flex_fix {
+		padding-top: 10%;
+	}
+	#mail_img div{
+		display: inline-block;
+	}
+	#kifu{
+		padding-top: 0;
+	}
+	#kifu ul{
+		display: flex;
+		justify-content: space-evenly;
+	}
+	#kifu ul li{
+		margin: 6px;
+    	padding: 6px 0;
+		width: 50%;
+		margin-bottom: 6px;
+	}
+	.share_part ul{
+		width: 80%;
+		margin: 0 auto;
+	}
+	.lp_fb img,
+	.lp_twitter img {
+		width: 12%;
+	}
+	.box_2 h2 {
+		top: -2.5rem;
+	}
+	#cases {
+		padding-top: 5%;
+	}
+	#cases h3{
+		margin: 3% 0;
+	}
+	#sdgs_mention ul{
+		display: flex;
+		justify-content: space-evenly;
+	}
+	#sdgs_mention ul li:first-child{
+		width: 20%;
+	}
+	#sdgs_mention ul li:last-child{
+		width: 70%;
+	}
+}
