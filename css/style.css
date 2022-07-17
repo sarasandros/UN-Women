@@ -218,20 +218,24 @@ input[type="submit" i]{
 .share_part ul li.lp_fb{
 	background-color: #3E5C99;
 	margin: 3% 0% 3% 5%;
+	vertical-align: middle;
 }
 .share_part ul li.lp_twitter{
 	background-color: #2BA2EF;
 	margin: 3% 5% 3% 3%;
+	vertical-align: middle;
 }
 .lp_fb img{
 	display: inline-block;
 	width: 20%;
 	padding-right: 5px;
+	vertical-align: middle;
 }
 .lp_twitter img{
 	display: inline-block;
 	width: 20%;
 	padding-right: 5px;
+	vertical-align: middle;
 }
 .share_part ul li a{
 	display: block;
