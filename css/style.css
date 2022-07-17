@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /* CSS Document */
+
 .cf:after {
   content: "";
   clear: both;
@@ -11,7 +12,7 @@ img{
 	height: auto;
 }
 body{
-	font-size: 17.6px;;
+	font-size: 17.6px;
 	color: #000;
     overflow-wrap: break-word;
     word-break: normal;
@@ -28,11 +29,34 @@ body{
 #top_main{
 	position: relative;
 }
+.slide-items{
+	position: absolute;
+	bottom: 50%;
+	margin-top: -10%;
+}
+.slide-items img{
+	width: 100%;
+}
+#slider_logo{
+	position: absolute;
+	left: 0%;
+	bottom: 0%;
+	z-index: 10;
+	width: 20%;
+}
 #sdgs_logo{
 	position: absolute;
 	top: 3%;
 	left: 3%;
 	width: 10%;
+}
+#pic_credit{
+	position: absolute;
+	top: 3%;
+	left: 15%;
+	color: #fff;
+	font-weight: normal;
+	font-size: 60%;
 }
 #top_logo{
 	position: absolute;
@@ -89,6 +113,7 @@ body{
     color: #333;
     font-weight: bold;
     font-size: 18px;
+	z-index: 1;
 }
 
 .box:before {
@@ -100,19 +125,18 @@ body{
     border-radius: 10px;
     border: 3px solid #E83819;
     content: "";
+	z-index: -1;
 }
 
-.box:after {
+/* .box:after {
     position: absolute;
     bottom: -31px;
     left: 50px;
     transform: skew(-25deg);
     height: 25px;
     width: 15px;
-    /* border-right: 3px solid #E83819;
-    background-color: #fff; */
     content: "";
-}
+} */
 .box h3{
 	position: absolute;
 	top: -2rem;
@@ -141,24 +165,24 @@ input[type="submit" i]{
 .pic-container span{
 	color: #009CDB;
 }
+
 #kifu{
 	padding-top: 10%;
 }
 #kifu h4{
 	padding-top: 5%;
-	font-size: 125%;
-}
-#kifu h5{
+	padding-bottom: 3%;
 	color: #E83819;
 }
+
 #kifu h5:nth-of-type(2){
 	padding-top: 3%;
 }
 #kifu ul li{
 	background-color: #009CDB;
-	padding: 6px;
+	padding: 18px;
 	text-align: center;
-	border-radius: 30px;
+	border-radius: 60px;
 	margin-bottom: 5%;
 }
 #kifu ul li a{
@@ -166,11 +190,14 @@ input[type="submit" i]{
 	color: #fff;
 	text-decoration: none;
 }
+.price_part li{
+	box-shadow: 1px 0px 5px 1px #000;
+}
 #kifu #present_part li{
 	background-color: #CAE8F5;
 }
 #kifu #present_part li:first-child{
-	padding: 10% 0 5% 0;
+	padding: 0;
 	margin-bottom: 0%;
 }
 .share_part {
@@ -395,6 +422,12 @@ h2.blue_frame_flex{
 
 /* Tablet */
 @media screen and (min-width : 600px){
+	body{
+		font-size: 25.6px;
+	}
+	#slider_logo{
+		width: 50%;
+	}
 	#intro p{
 		padding-top: 5%;
 	}
@@ -422,10 +455,12 @@ h2.blue_frame_flex{
 	}
 	#kifu ul li{
 		margin: 6px;
-    	padding: 6px 0;
 		width: 50%;
-		margin-bottom: 6px;
+		margin-bottom: 12px;
 	}
+	form div{
+		margin-top: 5%;
+	 }
 	.share_part ul{
 		width: 80%;
 		margin: 0 auto;
@@ -453,11 +488,17 @@ h2.blue_frame_flex{
 	#sdgs_mention ul li:last-child{
 		width: 70%;
 	}
+	.fix_space{
+		padding-bottom: 5%;
+	 }
 }
 
 
 /* PC */
 @media screen and (min-width : 1025px){
+ #slider_logo img{
+	width: 50%;
+ }
  .space{
 	width: 980px;
 	margin: 0 auto;
@@ -468,4 +509,28 @@ h2.blue_frame_flex{
  .tell{
 	padding-bottom: 1%;
  }
+ label{
+	font-size: 135%;
+ }
+ input[type="email" i]{
+	width: 70%;
+ß
+ }
+ .flex_fix li{
+	font-size: 125%;
+ }
+ input[type="submit" i]{
+	font-size: 125%;
+	margin: 1% 0 5% 0;
+ }
+
+ #kifu #present_part li:first-child{
+	margin-bottom: 0%;
+	font-size: 125%;
+ }
+ #kifu h4{
+	font-size: 125%;
+	padding-bottom: 1%;
+ }
+
 }

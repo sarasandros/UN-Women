@@ -8,14 +8,65 @@
         <title>国連ウィメン日本協会 #ともに社会を変えよう</title>
         <link href="css/reset.css" rel="stylesheet" type="text/css">
         <link href="css/style.css" rel="stylesheet" type="text/css">
+
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+        <script>
+            const $ = jQuery;
+            $(function(){
+                $(".slide-items").slick({
+                    variableWidth: false,
+                    autoplay: true, //自動でスクロール
+                    autoplaySpeed: 0, //自動再生のスライド切り替えまでの時間を設定
+                    speed: 5000, //スライドが流れる速度を設定
+                    cssEase: "linear", //スライドの流れ方を等速に設定
+                    slidesToShow: 10, //表示するスライドの数
+                    swipe: false, // 操作による切り替えはさせない
+                    arrows: false, //矢印非表示
+                    pauseOnFocus: false, //スライダーをフォーカスした時にスライドを停止させるか
+                    pauseOnHover: false, //スライダーにマウスホバーした時にスライドを停止させるか
+                    responsive: [
+                    {
+                        breakpoint: 5000,
+                        settings: {
+                        slidesToShow: 5, //画面幅750px以下でスライド3枚表示
+                        }
+                    }
+                    ]
+                });
+                });
+            </script>
+            
     </head>
     
     <body>
         <div id="top_main">
             <div id="top_logo"><img src="images/logo_white.png" alt="UN Women ロゴ"></div>
             <div id="sdgs_logo"><img src="images/sdgs_logo.png" alt="SDGs ロゴ"></div>
+            <div id="pic_credit">Photo: UN Women/Biju Boro.</div>
             <div><img src="images/top.jpg" alt="インドのアッサム州の茶園労働者の女性達"></div>
+            <div id="slider_logo"><img src="images/blueball_1.png" alt=""></div>
+            <ul class="slide-items">
+                <li><img src="images/blueball_2.png" alt=""></li>
+                <li><img src="images/blueball_3.png" alt=""></li>
+                <li><img src="images/blueball_4.png" alt=""></li>
+                <li><img src="images/blueball_5.png" alt=""></li>
+                <li><img src="images/blueball_6.png" alt=""></li>
+                <li><img src="images/blueball_2.png" alt=""></li>
+                <li><img src="images/blueball_3.png" alt=""></li>
+                <li><img src="images/blueball_4.png" alt=""></li>
+                <li><img src="images/blueball_5.png" alt=""></li>
+                <li><img src="images/blueball_6.png" alt=""></li>
+                <li><img src="images/blueball_2.png" alt=""></li>
+                <li><img src="images/blueball_3.png" alt=""></li>
+                <li><img src="images/blueball_4.png" alt=""></li>
+                <li><img src="images/blueball_5.png" alt=""></li>
+            </ul>
         </div>
+
      
      　<main>
         <article>
@@ -24,24 +75,24 @@
             <div class="tomoni">#ともに社会を変えよう</div>
             <div class="un_women"><img src="images/logo_blue.png" alt="UN Women ロゴ"></div>
             <div class="space">
-                <p>DVや暴力の被害にあっている
+                <p>DVや暴力の被害にあってきた
                     インドのアッサム州の茶園労働者の女性達。
                     UN Womenの支援で、暴力を防止し、
                     協力する新しい方法を見つけました。
                 </p>
-                <p>人身取引、ジェンダーに根差す暴力、
+                <p>人身取引、ジェンダーに基づく暴力、
                     性的搾取と虐待、強制労働、教育の不平等など、
-                    世界各地で、困難にある、女性と少女たち。
+                    世界各地で、困難な状況におかれている、女性と少女たち。
                 </p>
                 <p>世界の女性と少女たちに希望の未来を届けたい。
-                    UN Womenは、困難にある女性や少女のために、
-                    社会に変化を起こしてきました。
+                    UN Womenは、困難な状況にある女性や少女のために、
+                    変化を起こしてきました。
                 </p>
                 <p>この世界を
-                    女性も、リーダーになれる、
-                    女性も、経済的に自立できる、
+                    女性もリーダーになれる、
+                    女性も経済的に自立できる、
                     女性への暴力がない、
-                    機会が平等にある社会にするために
+                    機会が平等に得られる社会にするために
                     <span>世界の女性とともに、
                         ジェンダー平等な社会を目指しませんか？</span>
                 </p>
@@ -50,7 +101,7 @@
          </section>
         </article>
         <article id="second_part">
-            <h2><span class="red_circle"></span>参加方法<span class="red_circle"></span></h2>
+            <h2 id="join"><span class="red_circle"></span>参加方法<span class="red_circle"></span></h2>
             <section id="main_adress" class="space">
                 <foreignObject id="svg-section" width="100%" height="100%" style="height: 100%; overflow: auto;">
                     <div class="pic-container">
@@ -58,11 +109,11 @@
                             <h3 class="title_1"><img src="images/title_1.png" alt="UN Womenの活動報告メールを受け取る"></h3>
                             <ul class="flex_fix">
                                 <li>UN Womenとともに世界の女性と少女たち
-                                    が社会を変えた活動事例を、メールでお伝えし
-                                    ます。お送りしましたメールで、UN Womenの活動
-                                    に共感を覚えた方は、SNSで <span>#ともに社会を変えよう</span>を付けて発信してください。</li>
+                                    が社会を変えた事例を、メールでお伝えします。
+                                    お送りしましたメールで、UN Womenの活動
+                                    に共感してくださった方は、SNSで <span>#ともに社会を変えよう</span>を付けて発信してください。</li>
                                 <li id="mail_img">
-                                    <div><img src="images/pc_woman.png" alt=""></div>
+                                    <div><img src="images/sp_woman.png" alt=""></div>
                                     <div><img src="images/sp.png" alt=""></div>
                                 </li>
                             </ul>
@@ -82,38 +133,42 @@
                     <div class="pic-container">
                         <div class="box">
                             <h3 class="title_2"><img src="images/title_2.png" alt="世界の女性をエンパワーメントするために寄付をする"></h3>
-                            <p class="flex_fix">現在様々な困難にある世界の女性と少女をエンパワーメント
-                                するために寄付を募っています。皆さまの寄付が増えることで、
-                                世界の女性と少女たちが社会を変えた活動事例を、よりたくさん
-                                皆様にお届けできます。賛同と寄付をよろしくお願いします。
+                            <p class="flex_fix">
                             </p>
-                            <h4>賛同して寄付をする</h4>
-                            <h5>「毎月定額寄付」の方はこちら</h5>
-                                <ul>
-                                    <li><a href="">¥1,000毎月定額寄付をする</a></li>
-                                    <li><a href="">¥2,000毎月定額寄付をする</a></li>
-                                </ul>
-                                <ul>
-                                    <li><a href="">¥3,000毎月定額寄付をする</a></li>
-                                    <li><a href="">¥5,000毎月定額寄付をする</a></li>
-                                </ul>
-                            <h4>「今回のみ寄付」の方はこちら</h4>
-                            <ul>
-                                <li><a href="">¥3,000寄付をする</a></li>
-                                <li><a href="">¥5,000寄付をする</a></li>
-                            </ul>
-                            <ul>
-                                <li><a href="">¥8,000寄付をする</a></li>
-                                <li><a href="">¥10,000寄付をする</a></li>
-                            </ul>
-                            <ul>
-                                <li><a href="">¥20,000寄付をする</a></li>
-                                <li><a href="">¥30,000寄付をする</a></li>
-                            </ul>
                             <ul id="present_part">
-                                <li>#ともに社会を変えようキャンペーン に賛同いただき、ご寄付いただいた方には、『#ともに社会を変えようステッカー』を進呈いたします。</li>
+                                <li>困難な状況にある世界の女性と少女をエンパワーメントするため
+                                    に寄付を募っています。皆さまの寄付が増えることで、世界の女性
+                                    と少女たちがエンパワーメントを実現した事例を、よりたくさん皆
+                                    様にお届けできます。
+                                    #ともに社会を変えよう にご寄付いただいた方には、
+                                    『#ともに社会を変えようステッカー』
+                                    を進呈いたします。</li>
                                 <li><img src="images/sticker.png" alt="#ともに社会を変えようステッカー"></li>
                             </ul>
+                            <!-- <h4>賛同して寄付をする</h4> -->
+                            <h4>「毎月定額寄付」の方はこちら</h4>
+                                <ul class="price_part">
+                                    <li><a href="">¥1,000毎月定額寄付をする ></a></li>
+                                    <li><a href="">¥2,000毎月定額寄付をする ></a></li>
+                                </ul>
+                                <ul class="price_part">
+                                    <li><a href="">¥3,000毎月定額寄付をする ></a></li>
+                                    <li><a href="">¥5,000毎月定額寄付をする ></a></li>
+                                </ul>
+                            <h4>「今回のみ寄付」の方はこちら</h4>
+                            <ul class="price_part">
+                                <li><a href="">¥3,000寄付をする ></a></li>
+                                <li><a href="">¥5,000寄付をする ></a></li>
+                            </ul>
+                            <ul class="price_part">
+                                <li><a href="">¥8,000寄付をする ></a></li>
+                                <li><a href="">¥10,000寄付をする ></a></li>
+                            </ul>
+                            <ul class="price_part">
+                                <li><a href="">¥20,000寄付をする ></a></li>
+                                <li><a href="">¥30,000寄付をする ></a></li>
+                            </ul>
+                            <div class="fix_space"></div>
                     </div>
                 </foreignObject>
             </section>
@@ -131,8 +186,8 @@
                 <div class="sticky_note space">
                     <div><img src="images/clip.png" alt="クリップ"></div>
                     <h2><span class="red_circle"></span>UN Womenの支援活動<span class="red_circle"></span></h2>
-                    <h3>世界は変わり始めています</h3>
-                    <p>UN Womeは、こんな支援をしてきました</p>
+                    <h3>世界は変わりつつあります。</h3>
+                    <p>UN Womenは、こんな支援をしてきました</p>
                 </div>
                 <div class="space" ></div>
                 <div class="video">
@@ -144,8 +199,7 @@
                     <h2 class="blue_frame">UN womenの活動が世界を変え始めています。</h2>
                     <p>政治的、宗教的、文化的に声を上げることが難しく、声を上げても
                         弾圧されてしまい、さらには命の危険に繋がる国々があります。
-                        そのような国々の女性や少女が社会を変えるためには、
-                        外部からの支援が必要となり、
+                        そのような国々の女性や少女が社会を変えるために
                         UN Womenは皆様から託された寄付で活動をおこなっています。</p>
             </section>
             <section id="cases" class="space">
@@ -157,12 +211,12 @@
                             <h3>女性もリーダーになれる社会へ</h3>
                             <ul>
                                 <li><img src="images/case1.jpg" alt="ロヒンギャ 女性のリーダーシップ"></li>
-                                <li>2019半ばからリーダー的役割を果たすロ
-                                    ヒンギャ女性が徐々に登場し、キャンプ内
-                                    で独自に自分たちの権利を主張し、正義を
-                                    求め、女性に不可欠なサービス、教育、スキ
-                                    ルを提供するためのグループを形成する
-                                    ようになりました。UN Women はこれら
+                                <li>2019年からリーダー的役割を果たすロヒ
+                                    ンギャ女性が徐々に登場し、キャンプ内で
+                                    独自に自分たちの権利を主張し、正義を求
+                                    め、女性に不可欠なサービス、教育、スキル
+                                    を提供するためのグループを形成するよ
+                                    うになりました。UN Women はこれら
                                     の女性リーダー50人を集め、ネットワーク
                                     づくりを支援。1,000人を超えるロヒン
                                     ギャとホストコミュニティの女性がアドボカシー、交渉術、ネットワークづくりのなど
@@ -191,7 +245,7 @@
                             <ul>
                                 <li><img src="images/case3.png" alt="パキスタン 警察官研修マニュアル"></li>
                                 <li>パキスタンでは、家父長制に基づいた根深
-                                    い偏見から、暴力での女性被害者であって
+                                    い偏見から、女性は暴力の被害者であって
                                     も責められ、刑事司法制度さえも差別的で
                                     した。UN Womenは、警察改革のための
                                     研修を実施し、警察官研修マニュアルを作
@@ -207,7 +261,7 @@
             </section>
             <section class="join_part">
                 <p>このキャンペーンに参加します</p>
-                <div class="push_btn"><a href="#"><img src="images/push_btn.png"></a></div>
+                <div class="push_btn"><a href="#join"><img src="images/push_btn.png"></a></div>
                 <div class="tomoni">#ともに社会を変えよう</div>
             </section>
         </article>      
@@ -221,35 +275,38 @@
                 </div>
                 <ul class="space">
                     <li><img src="images/sdgs_logo.png"></li>
-                    <li>すべての人々の人権を実現し、ジェンダー平等と
-                        すべての女性のエンパワーメントを達成することを目指すことは、すべての目標とターゲットの進展に極めて重要な貢献をするものです。
-                        17のゴールすべてにおいて、女性と男性が平等に恩恵を受けるためにはどうすれば良いかを必ず考慮しなければなりません。</li>
+                    <li>すべての女性の人権を実現し、ジェンダー平等と
+                        すべての女性のエンパワーメントを達成を目指す
+                        ことは、すべての目標とターゲットの進展に極め
+                        て重要な貢献をするものです。
+                        17のゴールすべてにおいて、女性と男性が平等に
+                        恩恵を受けるためにはどうすれば良いかを必ず考
+                        慮しなければなりません。</li>
                 </ul>
 
                 <div class="blue_bk">
                     <p>SDGsが注目されている今がチャンスです。
-                        世界の女性と少女とともに、
+                        世界の女性や少女とともに、
                         UN Womenとともに、
                         賛同と寄付をしてくれたあなたとともに
-                        ジェンダー平等な社会を
-                        実現しましましょう</p>
+                        ジェンダー平等な社会を実現しましょう</p>
                     <div class="tomoni_w">#ともに社会を変えよう</div>
                 </div>
             </section>
             <section class="join_part">
                 <p>このキャンペーンに参加します</p>
-                <div class="push_btn"><a href="#"><img src="images/push_btn.png"></a></div>
+                <div class="push_btn"><a href="#join"><img src="images/push_btn.png"></a></div>
             </section>
             <section id="mission" class="space">
-                <p>寄付は、UN Womenへの支援を通して、 
+                <p>あなたの寄付は、UN Womenへの支援を通して、 
                     世界の女性と少女が能力を発揮し、 可能性を開き、
-                    希望の未来を 手にする社会をつくります</p>
+                    希望の未来を 手にする社会をつくります。</p>
 
                     <div class="un_women"><img src="images/logo_blue.png"></div>
                     
-                    <p class="supplement">>国連ウィメン日本協会は、UN Womenの活動を支える日本の民間公式窓口です。
+                    <p class="supplement">国連ウィメン日本協会は、UN Womenの活動を支える日本の民間公式窓口です。
                         UN Womenが世界で実施する女性・少女のための
-                        プロジェクトの実施に向け、募金・広報活動をおこなっています。</p>
+                        プロジェクトの実施を支援するために、募金・広報活動をおこなっています。</p>
             </section>            
             <section class="share_part">
                     <div class="tell">このキャンペーンを皆さんにお伝えください。</div>
@@ -261,5 +318,10 @@
              <section class="bg_space"></section>
         </article>
         </main>   
+
+
+      
+
+
     </body>
 </html>
